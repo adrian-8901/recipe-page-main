@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+* { 
+    border: 0; 
+    margin: 0; 
+    box-sizing: border-box;
+}
+
+:root { 
+    /* font */
+    --FF: "Outfit", sans-serif;
+    --FF-HEADER: "Young Serif", sans-serif;
+    --FS: 16px;
+    --FS-H2: 2.25rem;
+    --FS-H3: 1.75rem;
+    --FS-H4: 1.25rem;
+    --FW-HEADER: 400;
+    --FW-PARA: 400; 
+    --FW-BOLD: 700;
+    --FW-TABLE: 600;
+
+    /* color */ 
+    --PREPHEAD-COLOR: hsl(332, 51%, 32%);
+    --PREPBG-COLOR: hsl(330, 100%, 98%);
+    --BODY-COLOR: hsl(0, 0%, 100%);
+    --BG-COLOR: hsl(30, 54%, 90%);
+    --FONT-COLOR: #333;
+    --BORDER-COLOR: hsl(30, 18%, 87%);
+    --HEADER-COLOR: hsl(14, 45%, 36%);
+ 
+    /* padding, borders and margins */ 
+    --PADDING: 1rem;
+    --BORDER-RADIUS: 2rem;
+    --MARGIN: 0.5em 0;
+}
+
+/* utility class */ 
+img { 
+    display: block;
+    width: 100%; 
+    height: auto; 
+
+}
+
+/* general style */ 
+html { 
+    font-family: var(--FF);
+    background-color: var(--BG-COLOR);
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+body { 
+    max-width: 75vw;
+    margin: auto;
+    background-color: var(--BODY-COLOR);
+    border-radius: var(--BORDER-RADIUS);
+    padding: 0.5rem;
+}
+
+main { 
+    padding: var(--PADDING);
+}
+
+h3 { 
+    font-size: var(--FS-H3);
+}
+
+h2 { 
+    font-size: var(--FS-H2);
+}
+
+/* specific styles */ 
+img { 
+    border-radius: var(--BORDER-RADIUS);
+}
+
+article { 
+    font-size: var(--FS);
+    margin: var(--MARGIN);
+    line-height: 2;
+    font-weight: var(--FW-PARA);
+    color: var(--FONT-COLOR);
+}
+
+.header { 
+    margin: var(--MARGIN);
+    font-weight: var(--FW-HEADER);
+    font-family: var(--FF-HEADER);
+    color: var(--HEADER-COLOR);
+}
+
+h4 { 
+    font-size: var(--FS-H4);
+    margin: var(--MARGIN);
+}
+
+.prep { 
+    background-color: var(--PREPBG-COLOR);
+    border-radius: var(--BORDER-RADIUS);
+    padding: var(--PADDING);
+    line-height: 2.3;
+}
+
+.ingredients { 
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    padding-bottom: 1.25rem; 
+}
+
+.instruction { 
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    padding-bottom: 1.25rem;
+}
+
+.bold {
+    font-weight: var(--FW-BOLD);
+}
+
+.table { 
+    width: 100%;
+}
+
+td { 
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    padding-top: 1rem;
+}
+
+.highlight { 
+    color: var(--HEADER-COLOR);
+    font-weight: bold;
+}
+
+.prepHead { 
+    color: var(--PREPHEAD-COLOR);
+}
+
+@media screen and (max-width: 375px) {
+    html { 
+        padding: 0;
+        background-color: white;
+    }
+    body { 
+        max-width: 100%;
+        margin: 0;
+        border-radius: 0;
+        padding: 0;
+    }
+
+    img { 
+        border-radius: 0;
+        width: 100%; 
+        height: auto;
+    }
+
+    .head { 
+        margin: 0;
+    }
+    
+    .main__header { 
+        color: black;
+    }
+
+}
